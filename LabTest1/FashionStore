@@ -1,0 +1,7 @@
+public class FashionStore<E extends Comparable<E>> extends ShopLot{
+    Item clothes ;
+
+    public FashionStore(String shopName, Person contactPerson, Person[] employee) {
+        super(shopName, contactPerson, employee);
+    }
+}
