@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package test1;
+
+public class ShopLot<E> {
+    private String shopName ;
+    protected Person contactPerson;
+    private Person[] employee;
+    protected int numOfEmployee;
+    
+
+    public ShopLot(String shopName , Person contactPerson , Person[]employee) {
+        this.shopName = shopName;
+        this.contactPerson = contactPerson;
+        this.employee = employee;
+        numOfEmployee = employee.length;
+    }
+    
+    public String getName(){
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    @Override
+    public String toString() {
+        return "ShopLot{" + "shopName=" + shopName + ", contactPerson=" + contactPerson.toString() + ", employee=" + employee.toString() + '}';
+    }
+ 
+}
