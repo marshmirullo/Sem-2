@@ -1,0 +1,10 @@
+public class Item <E,T> {
+    private E item;
+    private T price;
+
+    public Item(E item, T price) {
+        this.item = item;
+        this.price = price;
+    }
+
+}
