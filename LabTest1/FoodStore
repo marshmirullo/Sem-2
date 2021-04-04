@@ -1,0 +1,23 @@
+public class FoodStore<E extends Comparable<E>> extends ShopLot {
+    Item menu ;
+
+    public FoodStore(String shopName, Person contactPerson, Person[] employee) {
+        super(shopName, contactPerson, employee);
+    }
+    
+    public int compareTo(FoodStore obj1) {
+        if(this.numOfEmployee<obj1.numOfEmployee)
+            return -1;
+        else if(this.numOfEmployee==obj1.numOfEmployee)
+            return 0;
+        else return 1;
+    }
+    
+    public String equals(FoodStore obj2) {
+        if (this.contactPerson==obj2.contactPerson)
+            return "Same";
+        else
+            return "Different";
+    }
+    
+}
