@@ -19,5 +19,4 @@ public class FoodStore<E extends Comparable<E>> extends ShopLot {
         else
             return "Different";
     }
-    
 }
