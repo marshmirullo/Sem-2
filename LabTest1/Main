@@ -1,0 +1,122 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package test1;
+
+import java.util.List;
+
+/**
+ *
+ * @author USER
+ */
+public class ShoppingMall {
+    public static void main(String[] args) {
+       
+        System.out.println("Food store with the highest number of emplyees: " + maxEmployee(<error>));
+        System.out.println("Fashion store with the highest number of employees: " + maxEmployee(<error>));
+        
+        System.out.println("The contact person for McDonalds and Sushi Mentai is " + compareTo(Person));
+        System.out.println("The contact person for McDonalds and Waroeng Penyet is " + compareTo(Person));
+        System.out.println("The contact person for Sushi Mentai and Waroeng Penyet is " + compareTo(Person));
+        
+        mostExpensive(FoodStore);
+        mostExpensive(FashionStore);
+        
+        
+        
+    }
+    
+    public static <E extends Comparable<E>> String maxEmployee(ShopLot{} list){
+    ShopLot max = list[0];
+            for (int i = 1; i < list.length; i++) {
+                if(max.compareTo(list[i]>0)){
+                    max = list[i];
+                }
+                return max;
+            }
+    }
+    public static <E extends Comparable<E>> String mostExpensive(ShopLot[] list){
+        E max=list[0];
+        max=list[0];
+        for (int i = 1; i < list.length; i++) {
+            if(max.compareTo(list[i])<0)
+                max=list[i];
+        }
+        return max;
+    }
+    public
+        
+}
+        
+        /**
+        FoodStore shop2 = new FoodStore("Sushi Mentai","Max 0112233445");
+        shop2.menu1("Chicken Katsu Don", 15);
+        shop2.menu2("Ramen", 12);
+        shop2.employee("Adam,Alex and Andrew");
+        
+        FoodStore shop3 = new FoodStore("Waroeng Penyet","Mike 0101122334");
+        shop3.menu1("Ayam Penyet", 10);
+        shop3.employee("Lex and Leon");
+        
+        int s1=2,s2=3,s3=2;
+        
+        FashionStore store1 = new FashionStore("Uniqlo","Nate 0199988776S");
+        store1.clothing1("Shirt",80);
+        store1.clothing2("T-shirt", 60);
+        store1.employee("Kate,Ken and Kurt");
+        
+        FashionStore store2 = new FashionStore("Padini","Nick 0195544332");
+        store2.clothing1("Blouse", 100);
+        store2.clothing2("Skirt", 80);
+        store2.employee("Frank and Felix");
+        
+        FashionStore store3 = new FashionStore("Mango","Nicole 0194433221");
+        store3.clothing1("Dress", 120);
+        store3.employee("Ron and John");
+        
+        int f1=3,f2=2,f3=2;
+
+        System.out.println("Food store with highest number of employees is " + max1(s1,s2,s3));
+        System.out.println("Fashion store with highest number of employee is " + max2(f1,f2,f3));
+        System.out.println("The contact person for McDonalds and Sushi Mentai is different ");
+        System.out.println("The contact person for McDonalds and Waroeng Penyet is the same");
+        System.out.println("The contact person for Sushi Mentai and Waroeng Penyet is different");
+        if(s2>s3)
+            System.out.println("Sushi Mentai have more employees than Waroeng Penyet");
+        else if(s3>s2)
+            System.out.println("Waroeng Penyet have more employees than Sushi Mentai");
+        else
+            System.out.println("Both stores have same number of employess");
+        
+    }
+    
+    public static String max1(int a,int b,int c){
+        if(a>b&&a>c)
+            return "McDonalds";
+        else if(b>c&&b>a)
+            return "Sushi Mentai";
+        else
+            return " Waroeng Penyet";
+    }
+    
+    public static String max2(int a,int b,int c){
+        if(a>b&&a>c)
+            return "Uniqlo";
+        else if(b>c&&b>a)
+            return "Padini";
+        else
+            return "Mango";
+    }
+    
+    public static int max(int a,int b){
+        if(a>b)
+            return a;
+        else if(b>a)
+                return b;
+        else
+            return 0;
+        
+    }
+    **/
