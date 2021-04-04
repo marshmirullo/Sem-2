@@ -23,9 +23,7 @@ public class ShoppingMall {
         
         mostExpensive(FoodStore);
         mostExpensive(FashionStore);
-        
-        
-        
+
     }
     
     public static <E extends Comparable<E>> String maxEmployee(ShopLot{} list){
